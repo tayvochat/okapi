@@ -1,0 +1,23 @@
+[package]
+name = "tayvo_okapi"
+description = "Structs for OpenAPI (AKA Swagger) documents"
+repository = "https://github.com/tayvochat/okapi"
+version = "0.9.1"
+authors = ["Graham Esau <gesau@hotmail.co.uk>"]
+edition = "2018"
+license = "MIT"
+readme = "../README.md"
+keywords = ["rust", "openapi", "swagger"]
+categories = ["web-programming"]
+
+[dependencies]
+schemars = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4"
+
+[features]
+# Implements `JsonSchema` for `Schemars` and `Okapi` types themselves.
+impl_json_schema = ["schemars/impl_json_schema"]
+# Preserve the order of items in schema and other part of the OpenAPI documentation.
+preserve_order = ["schemars/preserve_order"]

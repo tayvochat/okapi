@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "okapi",
+    "rocket-okapi",
+    "tayvo_rocket_okapi",
+    "rocket-okapi-codegen",
+    "examples/json-web-api",
+    "examples/custom_schema",
+    "examples/special-types",
+    "examples/secure_request_guard",
+    "examples/streams",
+]
